@@ -10,7 +10,7 @@ in your canvas.
 
 ## How to install
 
-Parachute can be downloaded from 
+Parachute can be installed with Rhino's Package Manager or downloaded from 
 [food4rhino](https://www.food4rhino.com/app/parachute). Follow the 
 instruction listed there. You could also build Parachute from source with 
 this repo.
@@ -26,7 +26,7 @@ ones (similar to Bifocals). You can edit the list of components that will be
 ignored in the settings file (*File > Special Folders > Settings Folder* and 
 then *parachute.xml*). The components are written with their names in a 
 comma separated list. This file is created when you run Parachute for the 
-first time. You need to restart Rhino for the changes to take effect.
+first time. Changes take effect when you reenable Parachute.
 
 When you save a file, the names are saved within the document. If you pass 
 this file to someone without Parachute installed, the names will persist and 

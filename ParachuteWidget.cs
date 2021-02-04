@@ -58,9 +58,11 @@ namespace Parachute
             }
             set
             {
+                GH_SettingsServer settings = new GH_SettingsServer("parachute", true);
                 if (value == true)
                 {
                     m_visible = true;
+                    Ignored = new List<string>(settings.GetValue("Ignored", "").Split(','));
                     RefreshParachute();
                 }
                 else
@@ -68,7 +70,6 @@ namespace Parachute
                     m_visible = false;
                     ClearParachute();
                 }
-                GH_SettingsServer settings = new GH_SettingsServer("parachute", true);
                 settings.SetValue("IsActive", m_visible);
                 settings.WritePersistentSettings();
             }
